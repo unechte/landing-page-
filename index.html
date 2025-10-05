@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>SLITRIP</title>
+
+  <link rel="icon" href="https://64.media.tumblr.com/6b3de1cd37824796ed91589483ceef4e/49774e1482b13882-c4/s75x75_c1/7c3e505912ec80707ece100a8be54dd7bf9e17a9.gifv" type="image/gif">
+
+  <style>
+    :root {
+      --slider-track-color: rgba(255, 197, 238, 0.5); /* Light pink track */
+      --slider-thumb-color: rgba(255, 197, 238, 1);   /* Pink thumb */
+    }
+
+    body { background:#000000; color:#f5d2ea; font-family:sans-serif; text-align:center; padding-top:25vh; overflow: hidden; }
+    input { padding:0.5rem; margin:0.5rem; }
+    button { padding:0.5rem 1rem; }
+
+    /* Kitten animation styles */
+    .kitten {
+      position: absolute;
+      width: 80px;
+      height: auto;
+      filter: sepia(4) saturate(4) hue-rotate(270deg) brightness(0.5);
+    }
+
+    /* Animation for the first kitten */
+    .kitten1 {
+      animation: moveAround1 15s linear infinite;
+    }
+
+    @keyframes moveAround1 {
+      0% { left: 0; top: 0; }
+      25% { left: 80vw; top: 0; }
+      50% { left: 80vw; top: 80vh; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 0; top: 0; }
+    }
+
+    /* Animation for the second kitten */
+    .kitten2 {
+      animation: moveAround2 18s linear infinite;
+    }
+
+    @keyframes moveAround2 {
+      0% { left: 80vw; top: 0; }
+      25% { left: 80vw; top: 80vh; }
+      50% { left: 0; top: 80vh; }
+      75% { left: 0; top: 0; }
+      100% { left: 80vw; top: 0; }
+    }
+
+    /* Animation for the third kitten */
+    .kitten3 {
+      animation: moveAround3 20s linear infinite;
+    }
+
+    @keyframes moveAround3 {
+      0% { left: 0; top: 80vh; }
+      25% { left: 0; top: 0; }
+      50% { left: 80vw; top: 0; }
+      75% { left: 80vw; top: 80vh; }
+      100% { left: 0; top: 80vh; }
+    }
+
+    /* Animation for the fourth kitten */
+    .kitten4 {
+      animation: moveAround4 22s linear infinite;
+    }
+
+    @keyframes moveAround4 {
+      0% { left: 80vw; top: 80vh; }
+      25% { left: 40vw; top: 40vh; }
+      50% { left: 0; top: 80vh; }
+      75% { left: 40vw; top: 0; }
+      100% { left: 80vw; top: 80vh; }
+    }
+
+    /* Animation for the fifth kitten */
+    .kitten5 {
+      animation: moveAround5 25s linear infinite;
+    }
+
+    @keyframes moveAround5 {
+      0% { left: 40vw; top: 40vh; }
+      25% { left: 80vw; top: 0; }
+      50% { left: 0; top: 0; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 40vw; top: 40vh; }
+    }
+
+    /* Animation for the sixth kitten */
+    .kitten6 {
+      animation: moveAround6 27s linear infinite;
+    }
+
+    @keyframes moveAround6 {
+      0% { left: 0; top: 0; }
+      25% { left: 80vw; top: 80vh; }
+      50% { left: 40vw; top: 40vh; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 0; top: 0; }
+    }
+
+    /* Animation for the seventh kitten */
+    .kitten7 {
+      animation: moveAround7 30s linear infinite;
+    }
+
+    @keyframes moveAround7 {
+      0% { left: 0; top: 40vh; }
+      25% { left: 40vw; top: 0; }
+      50% { left: 80vw; top: 40vh; }
+      75% { left: 40vw; top: 80vh; }
+      100% { left: 0; top: 40vh; }
+    }
+
+    /* Animation for the eighth kitten */
+    .kitten8 {
+      animation: moveAround8 32s linear infinite;
+    }
+
+    @keyframes moveAround8 {
+      0% { left: 40vw; top: 0; }
+      25% { left: 80vw; top: 40vh; }
+      50% { left: 40vw; top: 80vh; }
+      75% { left: 0; top: 40vh; }
+      100% { left: 40vw; top: 0; }
+    }
+
+    /* Animation for the ninth kitten */
+    .kitten9 {
+      animation: moveAround9 35s linear infinite;
+    }
+
+    @keyframes moveAround9 {
+      0% { left: 10vw; top: 10vh; }
+      25% { left: 70vw; top: 20vh; }
+      50% { left: 50vw; top: 70vh; }
+      75% { left: 20vw; top: 50vh; }
+      100% { left: 10vw; top: 10vh; }
+    }
+
+    /* Animation for the tenth kitten */
+    .kitten10 {
+      animation: moveAround10 40s linear infinite;
+    }
+
+    @keyframes moveAround10 {
+      0% { left: 50vw; top: 50vh; }
+      25% { left: 70vw; top: 30vh; }
+      50% { left: 30vw; top: 70vh; }
+      75% { left: 10vw; top: 10vh; }
+      100% { left: 50vw; top: 50vh; }
+    }
+
+    /* Audio Player Styles */
+    #audioPlayer {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: 1px solid none;
+      padding: 10px;
+      border-radius: 5px;
+      color: none;
+      z-index: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+    }
+    #audioPlayer button {
+      background: none;
+      border: none;
+      color: rgba(255, 197, 238, 1);
+      font-size: 20px;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Style the slider track */
+    #audioPlayer input[type="range"] {
+      -webkit-appearance: none; /* Remove default styling */
+      width: 100px;
+      height: 5px;
+      background: var(--slider-track-color); /* Use variable for track color */
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Style the slider thumb */
+    #audioPlayer input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Remove default styling */
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #audioPlayer input[type="range"]::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #audioPlayer input[type="range"]::-ms-thumb {
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function checkPassword() {
+      const pw = document.getElementById("pw").value;
+      if (pw === "meow") {
+        window.location.href = "https://meow.thecoldinmyheart.com/";
+      } else {
+        alert("bad kitten..!");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("pw");
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          checkPassword();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>M E O W</h1>
+  <p>be a good kitten</p>
+  <input type="password" id="pw">
+  <button onclick="checkPassword()">🤍</button>
+
+  <!-- Multiple kittens -->
+  <img src="assets/cat.svg" alt="Walking Kitten 1" class="kitten kitten1">
+  <img src="assets/cat.svg" alt="Walking Kitten 2" class="kitten kitten2">
+  <img src="assets/cat.svg" alt="Walking Kitten 3" class="kitten kitten3">
+  <img src="assets/cat.svg" alt="Walking Kitten 4" class="kitten kitten4">
+  <img src="assets/cat.svg" alt="Walking Kitten 5" class="kitten kitten5">
+  <img src="assets/cat.svg" alt="Walking Kitten 6" class="kitten kitten6">
+  <img src="assets/cat.svg" alt="Walking Kitten 7" class="kitten kitten7">
+  <img src="assets/cat.svg" alt="Walking Kitten 8" class="kitten kitten8">
+  <img src="assets/cat.svg" alt="Walking Kitten 9" class="kitten kitten9">
+  <img src="assets/cat.svg" alt="Walking Kitten 10" class="kitten kitten10">
+
+  <!-- Audio Player -->
+  <div id="audioPlayer">
+    <button id="playPause">❤</button>
+    <label>Vol: <input type="range" id="volume" min="0" max="1" step="0.02" value="0.2"></label>
+  </div>
+
+  <script>
+    // Song Array
+    const songs = [
+      "https://ia601600.us.archive.org/32/items/rights_slowed__youconvert.net_/rights_%28slowed%29_%5B_YouConvert.net_%5D.mp3"
+    ];
+
+    let audio = new Audio();
+    audio.volume = 0.02;
+
+    function playRandomSong() {
+      const song = songs[Math.floor(Math.random() * songs.length)];
+      audio.src = song;
+      audio.play();
+      playPauseBtn.textContent = '❤';
+    }
+
+    window.addEventListener('load', () => {
+      playRandomSong();
+    });
+
+    const playPauseBtn = document.getElementById('playPause');
+    const volumeSlider = document.getElementById('volume');
+
+    playPauseBtn.addEventListener('click', () => {
+      if(audio.paused){
+        audio.play();
+        playPauseBtn.textContent = '❤';
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = '❤';
+      }
+    });
+
+    volumeSlider.addEventListener('input', () => {
+      audio.volume = volumeSlider.value;
+    });
+  </script>
+</body>
+</html>
