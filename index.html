@@ -24,29 +24,201 @@
       filter: sepia(4) saturate(4) hue-rotate(270deg) brightness(0.5);
     }
 
-    /* Animation for the kittens */
-    .kitten1 { animation: moveAround1 15s linear infinite; }
-    .kitten2 { animation: moveAround2 18s linear infinite; }
-    .kitten3 { animation: moveAround3 20s linear infinite; }
-    .kitten4 { animation: moveAround4 22s linear infinite; }
-    .kitten5 { animation: moveAround5 25s linear infinite; }
-    .kitten6 { animation: moveAround6 27s linear infinite; }
-    .kitten7 { animation: moveAround7 30s linear infinite; }
-    .kitten8 { animation: moveAround8 32s linear infinite; }
-    .kitten9 { animation: moveAround9 35s linear infinite; }
-    .kitten10 { animation: moveAround10 40s linear infinite; }
+    /* Animation for the first kitten */
+    .kitten1 {
+      animation: moveAround1 15s linear infinite;
+    }
 
-    /* Keyframes for animations */
-    @keyframes moveAround1 { 0% { left: 0; top: 0; } 25% { left: 80vw; top: 0; } 50% { left: 80vw; top: 80vh; } 75% { left: 0; top: 80vh; } 100% { left: 0; top: 0; } }
-    @keyframes moveAround2 { 0% { left: 80vw; top: 0; } 25% { left: 80vw; top: 80vh; } 50% { left: 0; top: 80vh; } 75% { left: 0; top: 0; } 100% { left: 80vw; top: 0; } }
-    @keyframes moveAround3 { 0% { left: 0; top: 80vh; } 25% { left: 0; top: 0; } 50% { left: 80vw; top: 0; } 75% { left: 80vw; top: 80vh; } 100% { left: 0; top: 80vh; } }
-    @keyframes moveAround4 { 0% { left: 80vw; top: 80vh; } 25% { left: 40vw; top: 40vh; } 50% { left: 0; top: 80vh; } 75% { left: 40vw; top: 0; } 100% { left: 80vw; top: 80vh; } }
-    @keyframes moveAround5 { 0% { left: 40vw; top: 40vh; } 25% { left: 80vw; top: 0; } 50% { left: 0; top: 0; } 75% { left: 0; top: 80vh; } 100% { left: 40vw; top: 40vh; } }
-    @keyframes moveAround6 { 0% { left: 0; top: 0; } 25% { left: 80vw; top: 80vh; } 50% { left: 40vw; top: 40vh; } 75% { left: 0; top: 80vh; } 100% { left: 0; top: 0; } }
-    @keyframes moveAround7 { 0% { left: 0; top: 40vh; } 25% { left: 40vw; top: 0; } 50% { left: 80vw; top: 40vh; } 75% { left: 40vw; top: 80vh; } 100% { left: 0; top: 40vh; } }
-    @keyframes moveAround8 { 0% { left: 40vw; top: 0; } 25% { left: 80vw; top: 40vh; } 50% { left: 40vw; top: 80vh; } 75% { left: 0; top: 40vh; } 100% { left: 40vw; top: 0; } }
-    @keyframes moveAround9 { 0% { left: 10vw; top: 10vh; } 25% { left: 70vw; top: 20vh; } 50% { left: 50vw; top: 70vh; } 75% { left: 20vw; top: 50vh; } 100% { left: 10vw; top: 10vh; } }
-    @keyframes moveAround10 { 0% { left: 50vw; top: 50vh; } 25% { left: 70vw; top: 30vh; } 50% { left: 30vw; top: 70vh; } 75% { left: 10vw; top: 10vh; } 100% { left: 50vw; top: 50vh; } }
+    @keyframes moveAround1 {
+      0% { left: 0; top: 0; }
+      25% { left: 80vw; top: 0; }
+      50% { left: 80vw; top: 80vh; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 0; top: 0; }
+    }
+
+    /* Animation for the second kitten */
+    .kitten2 {
+      animation: moveAround2 18s linear infinite;
+    }
+
+    @keyframes moveAround2 {
+      0% { left: 80vw; top: 0; }
+      25% { left: 80vw; top: 80vh; }
+      50% { left: 0; top: 80vh; }
+      75% { left: 0; top: 0; }
+      100% { left: 80vw; top: 0; }
+    }
+
+    /* Animation for the third kitten */
+    .kitten3 {
+      animation: moveAround3 20s linear infinite;
+    }
+
+    @keyframes moveAround3 {
+      0% { left: 0; top: 80vh; }
+      25% { left: 0; top: 0; }
+      50% { left: 80vw; top: 0; }
+      75% { left: 80vw; top: 80vh; }
+      100% { left: 0; top: 80vh; }
+    }
+
+    /* Animation for the fourth kitten */
+    .kitten4 {
+      animation: moveAround4 22s linear infinite;
+    }
+
+    @keyframes moveAround4 {
+      0% { left: 80vw; top: 80vh; }
+      25% { left: 40vw; top: 40vh; }
+      50% { left: 0; top: 80vh; }
+      75% { left: 40vw; top: 0; }
+      100% { left: 80vw; top: 80vh; }
+    }
+
+    /* Animation for the fifth kitten */
+    .kitten5 {
+      animation: moveAround5 25s linear infinite;
+    }
+
+    @keyframes moveAround5 {
+      0% { left: 40vw; top: 40vh; }
+      25% { left: 80vw; top: 0; }
+      50% { left: 0; top: 0; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 40vw; top: 40vh; }
+    }
+
+    /* Animation for the sixth kitten */
+    .kitten6 {
+      animation: moveAround6 27s linear infinite;
+    }
+
+    @keyframes moveAround6 {
+      0% { left: 0; top: 0; }
+      25% { left: 80vw; top: 80vh; }
+      50% { left: 40vw; top: 40vh; }
+      75% { left: 0; top: 80vh; }
+      100% { left: 0; top: 0; }
+    }
+
+    /* Animation for the seventh kitten */
+    .kitten7 {
+      animation: moveAround7 30s linear infinite;
+    }
+
+    @keyframes moveAround7 {
+      0% { left: 0; top: 40vh; }
+      25% { left: 40vw; top: 0; }
+      50% { left: 80vw; top: 40vh; }
+      75% { left: 40vw; top: 80vh; }
+      100% { left: 0; top: 40vh; }
+    }
+
+    /* Animation for the eighth kitten */
+    .kitten8 {
+      animation: moveAround8 32s linear infinite;
+    }
+
+    @keyframes moveAround8 {
+      0% { left: 40vw; top: 0; }
+      25% { left: 80vw; top: 40vh; }
+      50% { left: 40vw; top: 80vh; }
+      75% { left: 0; top: 40vh; }
+      100% { left: 40vw; top: 0; }
+    }
+
+    /* Animation for the ninth kitten */
+    .kitten9 {
+      animation: moveAround9 35s linear infinite;
+    }
+
+    @keyframes moveAround9 {
+      0% { left: 10vw; top: 10vh; }
+      25% { left: 70vw; top: 20vh; }
+      50% { left: 50vw; top: 70vh; }
+      75% { left: 20vw; top: 50vh; }
+      100% { left: 10vw; top: 10vh; }
+    }
+
+    /* Animation for the tenth kitten */
+    .kitten10 {
+      animation: moveAround10 40s linear infinite;
+    }
+
+    @keyframes moveAround10 {
+      0% { left: 50vw; top: 50vh; }
+      25% { left: 70vw; top: 30vh; }
+      50% { left: 30vw; top: 70vh; }
+      75% { left: 10vw; top: 10vh; }
+      100% { left: 50vw; top: 50vh; }
+    }
+
+    /* Audio Player Styles */
+    #audioPlayer {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: 1px solid none;
+      padding: 10px;
+      border-radius: 5px;
+      color: none;
+      z-index: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+    }
+    #audioPlayer button {
+      background: none;
+      border: none;
+      color: rgba(255, 197, 238, 1);
+      font-size: 20px;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Style the slider track */
+    #audioPlayer input[type="range"] {
+      -webkit-appearance: none; /* Remove default styling */
+      width: 100px;
+      height: 5px;
+      background: var(--slider-track-color); /* Use variable for track color */
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Style the slider thumb */
+    #audioPlayer input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Remove default styling */
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #audioPlayer input[type="range"]::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #audioPlayer input[type="range"]::-ms-thumb {
+      width: 15px;
+      height: 15px;
+      background: var(--slider-thumb-color); /* Use variable for thumb color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
   </style>
   <script>
     function checkPassword() {
@@ -75,7 +247,16 @@
   <button onclick="checkPassword()">🤍</button>
 
   <!-- Multiple kittens -->
-<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iY2F0Ij4KICA8cGF0aCBmaWxsPSIjODU0RDlDIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS43MTMxIDE2LjQ4MTRDMTEuNzEzMSAxNi40ODEzIDExLjcxNDEgMTYuNDgwOCAxMS43MTY1IDE2LjQ3OTggMTEuNzE0MyAxNi40ODA5IDExLjcxMzEgMTYuNDgxNCAxMS43MTMxIDE2LjQ4MTR6TTEyLjMyMjIgMTYuNDc5OEMxMi4zMjQ1IDE2LjQ4MDggMTIuMzI1NiAxNi40ODEzIDEyLjMyNTYgMTYuNDgxNCAxMi4zMjU1IDE2LjQ4MTQgMTIuMzI0NCAxNi40ODA5IDEyLjMyMjIgMTYuNDc5OHpNMTIuMzIyMiAxNS41MjAyQzEyLjMyNDQgMTUuNTE5MSAxMi4zMjU1IDE1LjUxODYgMTIuMzI1NiAxNS41MTg2IDEyLjMyNTYgMTUuNTE4NyAxMi4zMjQ1IDE1LjUxOTIgMTIuMzIyMiAxNS41MjAyek0xMS43MTY1IDE1LjUyMDJDMTEuNzE0MSAxNS41MTkyIDExLjcxMzEgMTUuNTE4NyAxMS43MTMxIDE1LjUxODYgMTEuNzEzMSAxNS41MTg2IDExLjcxNDMgMTUuNTE5MSAxMS43MTY1IDE1LjUyMDJ6TTExLjE3ODEgMTUuMDc5N0MxMS40MzA0IDE0Ljk4MTkgMTEuNzI4MSAxNC45Mzc1IDEyLjAxOTMgMTQuOTM3NSAxMi4zMTA2IDE0LjkzNzUgMTIuNjA4MyAxNC45ODE5IDEyLjg2MDYgMTUuMDc5NyAxMi45ODQzIDE1LjEyNzYgMTMuMTM1NyAxNS4yMDMyIDEzLjI2OTEgMTUuMzI1NCAxMy40MDI5IDE1LjQ0OCAxMy41NzU4IDE1LjY3NSAxMy41NzU4IDE2IDEzLjU3NTggMTYuMzI1IDEzLjQwMjkgMTYuNTUyIDEzLjI2OTEgMTYuNjc0NiAxMy4xMzU3IDE2Ljc5NjggMTIuOTg0MyAxNi44NzI0IDEyLjg2MDYgMTYuOTIwMyAxMi42MDgzIDE3LjAxODEgMTIuMzEwNiAxNy4wNjI1IDEyLjAxOTMgMTcuMDYyNSAxMS43MjgxIDE3LjA2MjUgMTEuNDMwNCAxNy4wMTgxIDExLjE3ODEgMTYuOTIwMyAxMS4wNTQ0IDE2Ljg3MjQgMTAuOTAzIDE2Ljc5NjggMTAuNzY5NiAxNi42NzQ2IDEwLjYzNTggMTYuNTUyIDEwLjQ2MjkgMTYuMzI1IDEwLjQ2MjkgMTYgMTAuNDYyOSAxNS42NzUgMTAuNjM1OCAxNS40NDggMTAuNzY5NiAxNS4zMjU0IDEwLjkwMyAxNS4yMDMyIDExLjA1NDQgMTUuMTI3NiAxMS4xNzgxIDE1LjA3OTd6TTguMDM2MzQgMTIuNjQ2NEM4LjIwMTM3IDEyLjM4IDguNTI3MjYgMTIuMDYyNSA5LjAxNjEgMTIuMDYyNSA5LjUwNDk0IDEyLjA2MjUgOS44MzA4MyAxMi4zOCA5Ljk5NTg2IDEyLjY0NjQgMTAuMTY4IDEyLjkyNDMgMTAuMjUgMTMuMjYxMiAxMC4yNSAxMy41OTM4IDEwLjI1IDEzLjkyNjMgMTAuMTY4IDE0LjI2MzIgOS45OTU4NiAxNC41NDExIDkuODMwODMgMTQuODA3NSA5LjUwNDk0IDE1LjEyNSA5LjAxNjEgMTUuMTI1IDguNTI3MjYgMTUuMTI1IDguMjAxMzcgMTQuODA3NSA4LjAzNjM0IDE0LjU0MTEgNy44NjQyMSAxNC4yNjMyIDcuNzgyMjMgMTMuOTI2MyA3Ljc4MjIzIDEzLjU5MzggNy43ODIyMyAxMy4yNjEyIDcuODY0MjEgMTIuOTI0MyA4LjAzNjM0IDEyLjY0NjR6TTE3Ljg2MzMgMTQuMzc1QzE3Ljg2MzMgMTMuOTYwOCAxOC4xOTkxIDEzLjYyNSAxOC42MTMzIDEzLjYyNSAxOC45MDkgMTMuNjI1IDE5LjI2MzUgMTMuNjkyNCAxOS41OTM5IDEzLjc3MzcgMTkuOTM4NiAxMy44NTg1IDIwLjMxMzMgMTMuOTcyOSAyMC42NzA0IDE0LjA5NSAyMS4zNTQzIDE0LjMyODkgMjIuMDc5NiAxNC42MjcxIDIyLjQwNzMgMTQuODM4NyAyMi43NTUyIDE1LjA2MzQgMjIuODU1MSAxNS41Mjc3IDIyLjYzMDQgMTUuODc1NiAyMi40MDU3IDE2LjIyMzYgMjEuOTQxNCAxNi4zMjM1IDIxLjU5MzUgMTYuMDk4OCAyMS40MzczIDE1Ljk5NzkgMjAuODcyMiAxNS43NDkzIDIwLjE4NTIgMTUuNTE0NCAxOS44NTY4IDE1LjQwMjEgMTkuNTI1OSAxNS4zMDE3IDE5LjIzNTUgMTUuMjMwMiAxOC45MzA4IDE1LjE1NTMgMTguNzIwNyAxNS4xMjUgMTguNjEzMyAxNS4xMjUgMTguMTk5MSAxNS4xMjUgMTcuODYzMyAxNC43ODkyIDE3Ljg2MzMgMTQuMzc1ek0xNy4yMTc4IDE2Ljg3NUMxNy4yMTc4IDE2LjQ2MDggMTcuNTUzNiAxNi4xMjUgMTcuOTY3OCAxNi4xMjUgMTguNTY4IDE2LjEyNSAxOS4xOTI0IDE2LjQwMDQgMTkuNjQ4OCAxNi42NDE2IDIwLjA1ODUgMTYuODU4MSAyMC40Mzg3IDE3LjEwNjcgMjAuNjgxMSAxNy4yNjUyIDIwLjcyMzEgMTcuMjkyNiAyMC43NjA5IDE3LjMxNzMgMjAuNzk0IDE3LjMzODcgMjEuMTQyIDE3LjU2MzQgMjEuMjQxOSAxOC4wMjc3IDIxLjAxNzIgMTguMzc1NiAyMC43OTI0IDE4LjcyMzYgMjAuMzI4MiAxOC44MjM1IDE5Ljk4MDIgMTguNTk4OCAxOS45MzkxIDE4LjU3MjIgMTkuODk1MyAxOC41NDM2IDE5Ljg0OSAxOC41MTM0IDE5LjYwMzcgMTguMzUzMyAxOS4yOSAxOC4xNDg1IDE4Ljk0OCAxNy45Njc4IDE4LjUxNzQgMTcuNzQwMiAxOC4xNzQgMTcuNjI1IDE3Ljk2NzggMTcuNjI1IDE3LjU1MzYgMTcuNjI1IDE3LjIxNzggMTcuMjg5MiAxNy4yMTc4IDE2Ljg3NXpNMy44MTUzMiAxNS41MTQ0QzMuMTI4MjMgMTUuNzQ5MyAyLjU2MzIgMTUuOTk3OSAyLjQwNjk4IDE2LjA5ODggMi4wNTkwMyAxNi4zMjM1IDEuNTk0NzggMTYuMjIzNiAxLjM3MDA2IDE1Ljg3NTYgMS4xNDUzNCAxNS41Mjc3IDEuMjQ1MjQgMTUuMDYzNCAxLjU5MzIgMTQuODM4NyAxLjkyMDg1IDE0LjYyNzEgMi42NDYxNCAxNC4zMjg5IDMuMzMwMDMgMTQuMDk1IDMuNjg3MTggMTMuOTcyOSA0LjA2MTkgMTMuODU4NSA0LjQwNjYgMTMuNzczNyA0LjczNjk2IDEzLjY5MjQgNS4wOTE0NCAxMy42MjUgNS4zODcxOSAxMy42MjUgNS44MDE0MSAxMy42MjUgNi4xMzcxOSAxMy45NjA4IDYuMTM3MTkgMTQuMzc1IDYuMTM3MTkgMTQuNzg5MiA1LjgwMTQxIDE1LjEyNSA1LjM4NzE5IDE1LjEyNSA1LjI3OTczIDE1LjEyNSA1LjA2OTY4IDE1LjE1NTMgNC43NjQ5NiAxNS4yMzAyIDQuNDc0NTggMTUuMzAxNyA0LjE0MzY1IDE1LjQwMjEgMy44MTUzMiAxNS41MTQ0ek00LjE1MDQ5IDE4LjUxMzRDNC4xMDQyNCAxOC41NDM2IDQuMDYwNDEgMTguNTcyMiA0LjAxOTI5IDE4LjU5ODggMy42NzEzMyAxOC44MjM1IDMuMjA3MDkgMTguNzIzNiAyLjk4MjM2IDE4LjM3NTYgMi43NTc2NCAxOC4wMjc3IDIuODU3NT
+  <img src="assets/cat.svg" alt="Walking Kitten 1" class="kitten kitten1">
+  <img src="assets/cat.svg" alt="Walking Kitten 2" class="kitten kitten2">
+  <img src="assets/cat.svg" alt="Walking Kitten 3" class="kitten kitten3">
+  <img src="assets/cat.svg" alt="Walking Kitten 4" class="kitten kitten4">
+  <img src="assets/cat.svg" alt="Walking Kitten 5" class="kitten kitten5">
+  <img src="assets/cat.svg" alt="Walking Kitten 6" class="kitten kitten6">
+  <img src="assets/cat.svg" alt="Walking Kitten 7" class="kitten kitten7">
+  <img src="assets/cat.svg" alt="Walking Kitten 8" class="kitten kitten8">
+  <img src="assets/cat.svg" alt="Walking Kitten 9" class="kitten kitten9">
+  <img src="assets/cat.svg" alt="Walking Kitten 10" class="kitten kitten10">
 
   <!-- Audio Player -->
   <div id="audioPlayer">
